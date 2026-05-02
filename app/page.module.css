@@ -129,11 +129,10 @@ a.secondary {
   }
 
   .page {
-    --background: #000;
-    --foreground: #000;
+    --background: var(--primary-bg);
 
-    --text-primary: #ededed;
-    --text-secondary: #999;
+    --text-primary: var(--primary-color);
+    --text-secondary: var(--secondary-color: );
 
     --button-primary-hover: #ccc;
     --button-secondary-hover: #1a1a1a;
