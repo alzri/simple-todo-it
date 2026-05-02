@@ -1,25 +1,50 @@
 {
-  "name": "simple-todo-it",
+  "name": "project-name",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint . && stylelint '**/*.{css,scss}'",
+    "lint:fix": "eslint . --fix && stylelint '**/*.{css,scss}' --fix",
+    "format": "prettier --write .",
+    "prettier:test": "prettier --check .",
+    "stylelint:test": "stylelint '**/*.{css,scss}' --allow-empty-input",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run lint && npm run prettier:test && npm run stylelint:test && npm run typecheck",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "next": "16.2.4",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "clsx": "^2.1.1",
+    "focus-trap-react": "^11.0.4",
+    "next": "^14.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "^0.34.3",
+    "zod": "^4.2.1"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.4",
+    "@eslint/js": "^9.31.0",
+    "@next/eslint-plugin-next": "^15.4.1",
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "^24.0.13",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/webpack": "^5.28.5",
+    "@typescript-eslint/eslint-plugin": "^8.59.1",
+    "@typescript-eslint/parser": "^8.59.1",
+    "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-plugin-react": "^7.34.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.3.2",
+    "sass": "^1.89.2",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-prettier": "^5.0.0",
     "typescript": "^5"
   }
 }
