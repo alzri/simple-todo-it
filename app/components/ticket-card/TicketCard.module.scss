@@ -1,0 +1,32 @@
+.ticket-wrapper {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  width: 100%;
+  min-height: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content {
+  display: grid;
+  gap: 10px;
+
+  .title {
+    font-family: var(--font-family-primary);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    color: var(-content-primary);
+  }
+
+  .desc {
+    font-family: var(--font-family-primary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    color: var(--content-secondary);
+  }
+}
