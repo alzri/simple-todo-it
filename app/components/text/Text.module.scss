@@ -1,0 +1,37 @@
+@use '../../styles/mixins' as *;
+
+.h1 {
+  @include text-styles(heading, h1);
+}
+
+.h5 {
+  @include text-styles(heading, h5);
+}
+
+.paragraph-medium {
+  @include text-styles(paragraph, medium);
+}
+
+.primary {
+  color: var(--content-primary);
+}
+
+.secondary {
+  color: var(-secondary-color);
+}
+
+.not-started {
+  color: var(--not-started-color);
+}
+
+.on-track {
+  color: var(--on-track-color);
+}
+
+.in-progress {
+  color: var(--in-progress-color);
+}
+
+.complited {
+  color: var(--complited-color);
+}

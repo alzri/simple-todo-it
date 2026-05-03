@@ -1,0 +1,37 @@
+.column {
+  background-color: var(--primary-bg);
+  padding: 20px 30px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+
+  &-title {
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+  }
+}
+
+.ticket-list {
+  display: grid;
+  gap: 30px;
+}
+
+.not-started {
+  color: var(--not-started-color);
+}
+
+.on-track {
+  color: var(--on-track-color);
+}
+
+.in-progress {
+  color: var(--in-progress-color);
+}
+
+.dompleted {
+  color: var(--complited-color);
+}

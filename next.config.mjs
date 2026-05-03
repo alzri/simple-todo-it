@@ -1,6 +1,14 @@
-/** @type {import('next').NextConfig} */
+import path from 'path';
+
 const nextConfig = {
-  reactStrictMode: true,
+  webpack(config) {
+    config.resolve.alias['@'] = path.resolve(process.cwd(), 'src');
+    return config;
+  },
+
+  sassOptions: {
+    includePaths: [path.join(process.cwd(), 'src')],
+  },
 };
 
 export default nextConfig;
