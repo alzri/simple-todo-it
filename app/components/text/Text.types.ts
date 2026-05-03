@@ -5,7 +5,7 @@ export type TextSize = 'h1' | 'h2' | 'paragraph-medium';
 export type TextColor =
   | 'primary'
   | 'secondary'
-  | 'complited'
+  | 'completed'
   | 'in-progress'
   | 'on-tack'
   | 'not-started';

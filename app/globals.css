@@ -40,8 +40,8 @@
   --content-tertiary: #fff;
   --primary-bg: #f6f8fa;
   --secondary-bg: #fff;
-  --complited-color: #3aaa68;
-  --complited-bg: #eef8f2;
+  --completed-color: #3aaa68;
+  --completed-bg: #eef8f2;
   --in-progress-color: #ffa30c;
   --in-progress-bg: #fff8ef;
   --not-started-color: #4016fd;
@@ -50,6 +50,8 @@
   --on-track-bg: #fbf1f7;
   --border-color: #bababc;
   --button-color: #6d43c7;
+  --create-button: #32b568;
+  --delete-button: #ff0404;
 
   /* breakpoints */
   --breakpoint-l: 2560px;
