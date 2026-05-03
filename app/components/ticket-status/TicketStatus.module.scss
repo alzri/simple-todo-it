@@ -1,0 +1,41 @@
+@use '../../styles/mixins' as *;
+
+.ticketStatus {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  appearance: none;
+  text-align: center;
+  font-family: var(--font-family-primary);
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.not-started {
+  background-color: var(--not-started-bg);
+  color: var(--not-started-color);
+}
+
+.on-track {
+  background-color: var(--on-track-bg);
+  color: var(--on-track-color);
+}
+
+.in-progress {
+  background-color: var(--in-progress-bg);
+  color: var(--in-progress-color);
+}
+
+.completed {
+  background-color: var(--completed-bg);
+  color: var(--completeds-color);
+}

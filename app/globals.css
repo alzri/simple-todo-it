@@ -1,42 +1,57 @@
 @font-face {
   font-family: 'PP Writer';
-  src: url('/fonts/pp-object-sans/PPWriter-Regular.otf') format('opentype');
-  font-weight: 400;
+  src: url('../public/fonts/pp-writer/PPWriter-Bold.otf') format('opentype');
+  font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'PP Writer';
-  src: url('/fonts/pp-writer/PPWriter-Bold.otf') format('opentype');
+  src: url('../public/fonts/pp-writer/PPWriter-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../public/fonts/noto-sans/NotoSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../public/fonts/noto-sans/NotoSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('../public/fonts/noto-sans/NotoSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-display: swap;
 }
 
 :root {
-  /* misc */
-  --animation-spacing-small: 35px;
-  --animation-spacing: 50px;
-  --animation-spacing-negative: -50px;
-  --white: #fff;
-  --light-gray: #bfbfbf;
-  --gray: #7f7f7f;
-  --dark-gray: #404040;
-  --black: #000;
-
   /* colors basic setup */
-  --primary-color: #000;
-  --secondary-color: #5f6374;
+  --content-primary: #000;
+  --content-secondary: #81828a;
+  --content-tertiary: #fff;
   --primary-bg: #f6f8fa;
   --secondary-bg: #fff;
-  --complited-color: #3aaa68;
-  --complited-bg: #eef8f2;
+  --completed-color: #3aaa68;
+  --completed-bg: #eef8f2;
   --in-progress-color: #ffa30c;
   --in-progress-bg: #fff8ef;
   --not-started-color: #4016fd;
   --not-started-bg: #eeeefc;
-  --on-tract-color: #db3d99;
-  --on-tract-bg: #fbf1f7;
+  --on-track-color: #db3d99;
+  --on-track-bg: #fbf1f7;
   --border-color: #bababc;
+  --button-color: #6d43c7;
+  --create-button: #32b568;
+  --delete-button: #ff0404;
 
   /* breakpoints */
   --breakpoint-l: 2560px;
@@ -62,9 +77,10 @@
 
   /* typography basic setup */
 
-  --font-family-primary: 'PP Writer', 'Times New Roman';
-  --font-weight-primary: 700;
-  --font-weight-secondary: 400;
+  --font-family-primary: 'Noto Sans', 'sans-serif';
+  --font-family-secondary: 'PP Writer', 'Times New Roman';
+  --font-weight-primary: 400;
+  --font-weight-secondary: 700;
 
   --typography-l-heading-h1-font-family: var(--font-family-primary);
   --typography-l-heading-h1-font-weight: var(--font-weight-secondary);
@@ -146,6 +162,7 @@ body {
   margin: 0 auto;
   background: var(--primary-bg);
   color: var(--text);
+  justify-content: center;
   transition:
     background 0.25s ease,
     color 0.25s ease;
@@ -154,4 +171,5 @@ body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
