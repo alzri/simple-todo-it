@@ -6,18 +6,29 @@
   margin: 0 auto;
   box-sizing: border-box;
   width: 100%;
-  padding: 120px 60px;
+  padding: 40px 60px;
   background-color: var(--secondary-bg);
   min-height: 100vh;
 }
 
 .main {
   display: flex;
-  gap: 50px;
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
   margin: auto;
+}
+
+.logo {
+  width: 150px;
+  height: 100%;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 20px 0;
 }
 
 .header {
@@ -25,6 +36,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .title-wrapper {
